@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  color: white;
+  text-align: center;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.todo__input {
+  padding: 0.55rem 1rem;
+  border: none;
+  flex: 1;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  outline: none;
+  width: 20rem;
+}
+
+.todo__btn {
+  padding: 1rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.todo__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 30rem;
+  padding: 1.2rem 0;
+}
+
+.todo__list li {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  transition: all 500ms;
+  border-radius: 1rem;
+}
+
+.todo__list li:hover {
+  background-color: rgb(70, 65, 65);
+  padding-left: 1rem;
+  color: white;
+}
+
+.todo__list li button {
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  border: none;
+  color: black;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
